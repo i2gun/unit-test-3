@@ -10,42 +10,42 @@ class MainHWTest {
     MainHW test;
 
     @BeforeEach
-    public void setTestClass() {
+    void setTestClass() {
         test = new MainHW();
     }
 
     @Test
-    public void testEvenNumber() {
+    void testEvenNumber() {
         assertTrue(test.evenOddNumber(4));
     }
 
     @Test
-    public void testOddNumber() {
+    void testOddNumber() {
         assertFalse(test.evenOddNumber(5));
     }
 
     @Test
-    public void testLessThan25() {
+    void testLessThan25() {
         assertFalse(test.numberInInterval(5));
     }
 
     @Test
-    public void testEqualTo25() {
+    void testEqualTo25() {
         assertTrue(test.numberInInterval(25));
     }
 
     @Test
-    public void testMoreThan25LessThan100() {
+    void testMoreThan25LessThan100() {
         assertTrue(test.numberInInterval(75));
     }
 
     @Test
-    public void testEqualTo100() {
+    void testEqualTo100() {
         assertTrue(test.numberInInterval(100));
     }
 
     @Test
-    public void testMoreThan100() {
+    void testMoreThan100() {
         assertFalse(test.numberInInterval(105));
     }
 
